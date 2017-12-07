@@ -2,7 +2,7 @@ module HealthcheckClient
   module Connection
     def connection
       @connection ||= begin
-        Faraday.new(HealthcheckClient.endpoint) do |b|
+        Faraday.new('localhost:3000') do |b|
           b.request :url_encoded
 
           b.response :rashify

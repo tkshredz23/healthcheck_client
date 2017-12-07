@@ -2,7 +2,7 @@ module HealthcheckClient
   module Configuration
     DEFAULT_ENDPOINT = "".freeze
 
-    VALID_OPTIONS_KEYS = [ :email, :password ]
+    VALID_OPTIONS_KEYS = [ :email, :password, :endpoint ]
 
     attr_accessor *VALID_OPTIONS_KEYS
 

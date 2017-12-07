@@ -1,0 +1,1 @@
+require './healthcheck_client'
