@@ -1,8 +1,6 @@
 module HealthcheckClient
   module Configuration
-    DEFAULT_ENDPOINT = "".freeze
-
-    VALID_OPTIONS_KEYS = [ :email, :password, :endpoint ]
+    VALID_OPTIONS_KEYS = [ :token, :endpoint ]
 
     attr_accessor *VALID_OPTIONS_KEYS
 
@@ -11,8 +9,7 @@ module HealthcheckClient
     end
 
     def reset
-      self.email = nil
-      self.password = nil
+      self.token = nil
       self.endpoint = nil
       self
     end

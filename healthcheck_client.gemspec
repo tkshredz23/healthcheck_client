@@ -2,6 +2,7 @@ Gem::Specification.new do |s|
   s.name = %q{healthcheck_client}
   s.version = "0.0.0"
   s.date = %q{2017-12-07}
+  s.authors = ["Tikky Shiwala"]
   s.summary = %q{client for the healthcheck app}
   s.files = [
     "lib/healthcheck_client.rb"
